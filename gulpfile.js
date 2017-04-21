@@ -7,6 +7,7 @@ var minify = require("gulp-minify");
 gulp.task("clean", function() {
 	return del([
 		"www/gulpfile.js",
+		"www/package.json",
 		"www/css/**/*.css",
 		"!www/css/**/style.css",
 		"www/js/*-debug.js",
