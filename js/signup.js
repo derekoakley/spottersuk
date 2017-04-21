@@ -354,14 +354,14 @@ var signup = (function() {
 
 	var validateInput = function($el) {
 		if ($el.validity.valid === false) {
-			$el.classList.remove("border-white");
+			$el.classList.remove("bg-white");
 			$el.classList.remove("ph-green");
-			$el.classList.add("border-orange");
-			$el.classList.add("ph-orange");
+			$el.classList.add("bg-washed-red");
+			$el.classList.add("ph-red");
 		} else {
-			$el.classList.remove("border-orange");
-			$el.classList.remove("ph-orange");
-			$el.classList.add("border-white");
+			$el.classList.remove("bg-washed-red");
+			$el.classList.remove("ph-red");
+			$el.classList.add("bg-white");
 			$el.classList.add("ph-green");
 		}
 	};
