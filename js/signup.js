@@ -356,11 +356,11 @@ var signup = (function() {
 		if ($el.validity.valid === false) {
 			$el.classList.remove("border-white");
 			$el.classList.remove("ph-green");
-			$el.classList.add("border-red");
-			$el.classList.add("ph-red");
+			$el.classList.add("border-orange");
+			$el.classList.add("ph-orange");
 		} else {
-			$el.classList.remove("border-red");
-			$el.classList.remove("ph-red");
+			$el.classList.remove("border-orange");
+			$el.classList.remove("ph-orange");
 			$el.classList.add("border-white");
 			$el.classList.add("ph-green");
 		}

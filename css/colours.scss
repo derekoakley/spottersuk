@@ -2,7 +2,7 @@
  */
 $green: #19A974;
 $light-green: #9EEBCF;
-$red: red;
+$orange: #FF6300;
 
 /*=Stripes
  */
@@ -85,21 +85,21 @@ $stripe-2-dark: rgba(0,0,0,1);
   border-color: $green;
 }
 
-/*=Red*/
-.ph-red::-webkit-input-placeholder {
-  color: $red;
+/*=Orange*/
+.ph-orange::-webkit-input-placeholder {
+  color: $orange;
 }
-.ph-red::-moz-placeholder {
-  color: $red;
+.ph-orange::-moz-placeholder {
+  color: $orange;
 }
-.ph-red:-ms-input-placeholder {
-  color: $red;
+.ph-orange:-ms-input-placeholder {
+  color: $orange;
 }
-.ph-red:-moz-placeholder {
-  color: $red;
+.ph-orange:-moz-placeholder {
+  color: $orange;
 }
-.border-red {
-  border-color: $red;
+.border-orange {
+  border-color: $orange;
 }
 
 /*=White*/
