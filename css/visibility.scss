@@ -1,0 +1,10 @@
+/*=Visibility*/
+.hidden {
+  visibility: hidden;
+}
+input:checked + .checked-visible {
+  visibility: visible;
+}
+input:checked + * .checked-visible {
+  visibility: visible;
+}

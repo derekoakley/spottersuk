@@ -1,0 +1,254 @@
+/*=Colours
+ */
+$green: #19A974;
+$light-green: #9EEBCF;
+
+/*=Stripes
+ */
+$stripe-1-light: rgba(255,255,255,.9);
+$stripe-1-dark: rgba(255,255,255,.8);
+$stripe-2-light: rgba(0,0,0,.8);
+$stripe-2-dark: rgba(0,0,0,1);
+
+$stripe-1-light: rgba(255,255,255,.5);
+$stripe-1-dark: rgba(255,255,255,.2);
+$stripe-2-light: rgba(0,0,0,.85);
+$stripe-2-dark: rgba(0,0,0,1);
+
+/*=Black*/
+.bg-black {
+  background-color: black;
+}
+.bg-black-01 {
+  background-color: rgba(0,0,0,.1);
+}
+.bg-black-02 {
+  background-color: rgba(0,0,0,.2);
+}
+.bg-black-03 {
+  background-color: rgba(0,0,0,.3);
+}
+.bg-black-04 {
+  background-color: rgba(0,0,0,.4);
+}
+.bg-black-05 {
+  background-color: rgba(0,0,0,.5);
+}
+.bg-black-06 {
+  background-color: rgba(0,0,0,.6);
+}
+.bg-black-07 {
+  background-color: rgba(0,0,0,.7);
+}
+.bg-black-08 {
+  background-color: rgba(0,0,0,.8);
+}
+.bg-black-09 {
+  background-color: rgba(0,0,0,.9);
+}
+.bg-black-scrim {
+ background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5));
+}
+.black {
+  color: black;
+}
+.border-black {
+  border-color: black;
+}
+
+/*=Light Green*/
+.bg-light-green {
+  background-color: $light-green;
+}
+
+/*=Green*/
+.bg-green {
+  background-color: $green;
+}
+.green {
+  color: $green;
+}
+.ph-green::-webkit-input-placeholder {
+  color: $green;
+}
+.ph-green::-moz-placeholder {
+  color: $green;
+}
+.ph-green:-ms-input-placeholder {
+  color: $green;
+}
+.ph-green:-moz-placeholder {
+  color: $green;
+}
+.border-green {
+  border-color: $green;
+}
+
+/*=White*/
+.bg-white {
+  background-color: white;
+}
+.bg-white-01 {
+  background-color: rgba(255,255,255,.1);
+}
+.bg-white-02 {
+  background-color: rgba(255,255,255,.2);
+}
+.bg-white-03 {
+  background-color: rgba(255,255,255,.3);
+}
+.bg-white-04 {
+  background-color: rgba(255,255,255,.4);
+}
+.bg-white-05 {
+  background-color: rgba(255,255,255,.5);
+}
+.bg-white-06 {
+  background-color: rgba(255,255,255,.6);
+}
+.bg-white-07 {
+  background-color: rgba(255,255,255,.7);
+}
+.bg-white-08 {
+  background-color: rgba(255,255,255,.8);
+}
+.bg-white-09 {
+  background-color: rgba(255,255,255,.9);
+}
+.white {
+  color: white;
+}
+.white-02 {
+  color: rgba(255,255,255,.2);
+}
+.white-05 {
+  color: rgba(255,255,255,.5);
+}
+.ph-white::-webkit-input-placeholder {
+  color: white;
+}
+.ph-white::-moz-placeholder {
+  color: white;
+}
+.ph-white:-ms-input-placeholder {
+  color: white;
+}
+.ph-white:-moz-placeholder {
+  color: white;
+}
+.border-white-02 {
+  border-color: rgba(255,255,255,.2);
+}
+.border-white-03 {
+  border-color: rgba(255,255,255,.3);
+}
+.border-white-04 {
+  border-color: rgba(255,255,255,.4);
+}
+.border-white-05 {
+  border-color: rgba(255,255,255,.5);
+}
+
+@media screen and (min-width: 640px) {
+
+  /*=Black*/
+  .black-ns {
+    color: black;
+  }
+
+  /*=White*/
+  .white-ns {
+    color: white;
+  }
+}
+
+
+/*=Visited
+ */
+
+/*=White*/
+.visited-white:visited {
+  color: white;
+}
+
+
+/*=Active Colours
+ */
+
+/*=Black*/
+.active-bg-black:active {
+  background-color: black;
+}
+.active-black:active {
+  color: black;
+}
+
+/*=White*/
+.active-bg-white:active {
+  background-color: white;
+}
+.active-white:active {
+  color: white;
+}
+
+/*=Background Stripes
+ */
+.bg-stripe-1-24px {
+ background: repeating-linear-gradient(-60deg, $stripe-1-light, $stripe-1-light 12px, $stripe-1-dark 12px, $stripe-1-dark 24px);
+}
+.bg-stripe-1-32px {
+ background: repeating-linear-gradient(-60deg, $stripe-1-light, $stripe-1-light 16px, $stripe-1-dark 16px, $stripe-1-dark 32px);
+}
+.bg-stripe-1-64px {
+ background: repeating-linear-gradient(-60deg, $stripe-1-light, $stripe-1-light 32px, $stripe-1-dark 32px, $stripe-1-dark 64px);
+}
+.bg-stripe-1-128px {
+ background: repeating-linear-gradient(-60deg, $stripe-1-light, $stripe-1-light 64px, $stripe-1-dark 64px, $stripe-1-dark 128px);
+}
+.bg-stripe-2-24px {
+ background: repeating-linear-gradient(-60deg, $stripe-2-light, $stripe-2-light 12px, $stripe-2-dark 12px, $stripe-2-dark 24px);
+}
+.bg-stripe-2-32px {
+ background: repeating-linear-gradient(-60deg, $stripe-2-light, $stripe-2-light 16px, $stripe-2-dark 16px, $stripe-2-dark 32px);
+}
+.bg-stripe-2-64px {
+ background: repeating-linear-gradient(-60deg, $stripe-2-light, $stripe-2-light 32px, $stripe-2-dark 32px, $stripe-2-dark 64px);
+}
+.bg-stripe-2-128px {
+ background: repeating-linear-gradient(-60deg, $stripe-2-light, $stripe-2-light 64px, $stripe-2-dark 64px, $stripe-2-dark 128px);
+}
+@media screen and (min-width: 640px) {
+  .bg-stripe-1-24px-ns {
+    background: repeating-linear-gradient(-60deg, $stripe-1-light, $stripe-1-light 12px, $stripe-1-dark 12px, $stripe-1-dark 24px);
+  }
+  .bg-stripe-1-32px-ns {
+    background: repeating-linear-gradient(-60deg, $stripe-1-light, $stripe-1-light 16px, $stripe-1-dark 16px, $stripe-1-dark 32px);
+  }
+  .bg-stripe-1-64px-ns {
+    background: repeating-linear-gradient(-60deg, $stripe-1-light, $stripe-1-light 24px, $stripe-1-dark 24px, $stripe-1-dark 64px);
+  }
+  .bg-stripe-1-128px-ns {
+    background: repeating-linear-gradient(-60deg, $stripe-1-light, $stripe-1-light 64px, $stripe-1-dark 64px, $stripe-1-dark 128px);
+  }
+  .bg-stripe-2-24px-ns {
+    background: repeating-linear-gradient(-60deg, $stripe-2-light, $stripe-2-light 12px, $stripe-2-dark 12px, $stripe-2-dark 24px);
+  }
+  .bg-stripe-2-32px-ns {
+    background: repeating-linear-gradient(-60deg, $stripe-2-light, $stripe-2-light 16px, $stripe-2-dark 16px, $stripe-2-dark 32px);
+  }
+  .bg-stripe-2-64px-ns {
+    background: repeating-linear-gradient(-60deg, $stripe-2-light, $stripe-2-light 32px, $stripe-2-dark 32px, $stripe-2-dark 64px);
+  }
+  .bg-stripe-2-128px-ns {
+    background: repeating-linear-gradient(-60deg, $stripe-2-light, $stripe-2-light 64px, $stripe-2-dark 64px, $stripe-2-dark 128px);
+  }
+}
+
+.no-bg {
+  background-color: transparent;
+}
+@media screen and (min-width: 640px) {
+  .no-bg-ns {
+    background-color: transparent;
+  }
+}

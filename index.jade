@@ -1,0 +1,53 @@
+header.relative.aspect-ratio--21x9.aspect-ratio--1x1-s.aspect-ratio--4x3-m.aspect-ratio--16x9-l.bg-black.center
+  picture.absolute.top-0.left-0.w-whole.h-whole
+    // S
+    source(
+      media="(max-width: 767px)" 
+      sizes="(max-width: 1356px) 100vw, 1356px" 
+      srcset="https://res.cloudinary.com/afferently/image/upload/ar_1:1%2Cc_fill%2C#{ gravity }/c_scale%2Cw_200%2Cq_auto%2Cf_auto/#{ img } 200w, https://res.cloudinary.com/afferently/image/upload/ar_1:1%2Cc_fill%2C#{ gravity }/c_scale%2Cw_913%2Cq_auto%2Cf_auto/#{ img } 913w, https://res.cloudinary.com/afferently/image/upload/ar_1:1%2Cc_fill%2C#{ gravity }/c_scale/#{ img } 1356w")
+    
+    // M
+    source(
+      media="(min-width: 768px) and (max-width: 991px)" 
+      sizes="(max-width: 1983px) 70vw, 1388px" 
+      srcset="https://res.cloudinary.com/afferently/image/upload/ar_4:3%2Cc_fill%2C#{ gravity }/c_scale%2Cw_538%2Cq_auto%2Cf_auto/#{ img } 538w,https://res.cloudinary.com/afferently/image/upload/ar_4:3%2Cc_fill%2C#{ gravity }/c_scale%2Cw_1022%2Cq_auto%2Cf_auto/#{ img } 1022w,https://res.cloudinary.com/afferently/image/upload/ar_4:3%2Cc_fill%2C#{ gravity }/c_scale%2Cw_1388%2Cq_auto%2Cf_auto/#{ img } 1388w")
+    
+    // L
+    source(
+      media="(min-width: 992px) and (max-width: 1199px)" 
+      sizes="(max-width: 2400px) 60vw, 1440px" 
+      srcset="https://res.cloudinary.com/afferently/image/upload/ar_16:9%2Cc_fill%2C#{ gravity }/c_scale%2Cw_596%2Cq_auto%2Cf_auto/#{ img } 596w,https://res.cloudinary.com/afferently/image/upload/ar_16:9%2Cc_fill%2C#{ gravity }/c_scale%2Cw_1074%2Cq_auto%2Cf_auto/#{ img } 1074w,https://res.cloudinary.com/afferently/image/upload/ar_16:9%2Cc_fill%2C#{ gravity }/c_scale%2Cw_1440%2Cq_auto%2Cf_auto/#{ img } 1440w")
+    
+    // Default
+    img.w-whole.bottom(
+      sizes="(max-width: 5120px) 40vw, 2048px" 
+      srcset="https://res.cloudinary.com/afferently/image/upload/ar_21:9%2Cc_fill%2C#{ gravity }/c_scale%2Cw_480%2Cq_auto%2Cf_auto/#{ img } 480w,https://res.cloudinary.com/afferently/image/upload/ar_21:9%2Cc_fill%2C#{ gravity }/c_scale%2Cw_1412%2Cq_auto%2Cf_auto/#{ img } 1412w,https://res.cloudinary.com/afferently/image/upload/ar_21:9%2Cc_fill%2C#{ gravity }/c_scale%2Cw_2048%2Cq_auto%2Cf_auto/#{ img } 2048w" src="https://res.cloudinary.com/afferently/image/upload/ar_21:9%2Cc_fill%2C#{ gravity }/c_scale%2Cw_2048%2Cq_auto%2Cf_auto/#{ img }" 
+      alt="")
+      
+  h1.absolute.top-0.left-0.w-whole.h-whole.flex.justify-center.items-center.p-r-05.p-l-05.font-size-2.font-size-3-ns.bg-black-scrim.white
+    span.w-50-max Connect with the Grassroots Football Community
+
+.flex-ns.flex-wrap-ns.bg-light-green
+  .flex-ns.flex-column-ns.items-end-ns.w-half-ns.p-2.bg-stripe-1-24px.black
+    .w-30-max
+      h2.font-size-1-5.font-size-25-ns For Players
+      img(height="64" src="img/players.svg" width="64")
+      p.hyphens.no-hyphens-ns.font-size-1-25-ns Track and share your achievements season-by-season, follow players from your league and see their highlights, complete challenges, improve your game and maybe even get discovered by a professional club.
+    
+  .w-half-ns.p-2.bg-stripe-2-32px.white
+    .w-30-max
+      h2.font-size-1-5.font-size-25-ns For Coaches
+      img(height="64" src="img/coaches.svg" width="64")
+      p.hyphens.no-hyphens-ns.font-size-1-25-ns Help your players to develop and enjoy football, congratulate players by giving awards, encourage engagement from supporters, shape the future of English football by recommending exceptional players to professional academies.
+    
+  .flex-ns.flex-column-ns.items-end-ns.w-half-ns.w-half-ns.p-2.bg-stripe-1-64px.black.bg-stripe-2-64px-ns.white-ns
+    .w-30-max
+      h2.font-size-1-5.font-size-25-ns For Supporters
+      img(height="64" src="img/supporters.svg" width="64")
+      p.hyphens.no-hyphens-ns.font-size-1-25-ns Help your players to develop and enjoy football, congratulate players by giving awards, shape the future of English football by recommending exceptional players to professional academies.
+    
+  .w-half-ns.p-2.bg-stripe-2-128px.white.bg-stripe-1-128px-ns.black-ns
+    .w-30-max
+      h2.font-size-1-5.font-size-25-ns For Clubs
+      img(height="64" src="img/clubs.svg" width="64")
+      p.hyphens.no-hyphens-ns.font-size-1-25-ns Promote the positive initiatives within your club, attract new players to your teams, showcase the achievements of your players and staff, attract more sponsors by building an online following.

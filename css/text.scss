@@ -1,0 +1,14 @@
+.hyphens {
+  hyphens: auto;
+}
+
+/*=Text Decoration*/
+.no-underline {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 40rem) {
+  .no-hyphens-ns {
+    hyphens: none;
+  }
+}

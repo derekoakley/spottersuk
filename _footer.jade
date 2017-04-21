@@ -1,0 +1,47 @@
+footer.relative.bg-green.white(data-signup="form")
+  .p-t-2.p-r-2.p-b-2.p-l-2.p-5-ns
+    h2.flex.justify-center.p-b-2.p-b-5-ns.font-size-1-5.font-size-3-ns.center
+      span.w-40-max Be amongst the first 10,000 to hear when we launch
+
+    .flex.justify-center.font-size-1-5-ns
+      form.w-40-max
+        input.w-whole.m-b-1.p-1.rounded-4px.bg-white.black.ph-green.border-0.transition-200ms(autocomplete="email" class="ph-#{ color } border-#{ color }" type="email" placeholder="Your E-mail address" style="background-blend-mode: color;")
+
+        input.w-whole.m-b-1.p-1.rounded-4px.bg-white.black.ph-green.border-0.transition-200ms(autocomplete="given-name" class="ph-#{ color } border-#{ color }" type="text" placeholder="First Name")
+
+        input.w-whole.m-b-1.p-1.rounded-4px.bg-white.black.ph-green.border-0.transition-200ms(autocomplete="family-name" class="ph-#{ color } border-#{ color }" type="text" placeholder="Surname")
+
+        label.pointer.flex.items-center.p-b-2
+          input.no-d(type="checkbox")
+          .flex.justify-center.items-center.w-4.h-4.rounded.bg-white(class="border-#{ color }" style="flex: 0 0 4rem")
+            img.hidden.opacity-0.checked-visible.checked-opacity-1.transition-200ms(height="64" src="img/ic_check_circle_black_24px.svg" width="64")
+          p.p-l-1
+            span I am a  
+            span.p-b-2px.border-white-05.border-b-2px.border-b-4px-ns player over the age of 13
+            span  or  
+            span.p-b-2px.border-white-05.border-b-2px.border-b-4px-ns a parent of a player under the age of 13
+
+        //- label.pointer.flex.items-center.p-b-1
+        //-   input.display-none(name="type" type="radio" value="player")
+        //-   .flex.justify-center.items-center.w-4.h-4.rounded.border-white-02.border-2px(style="flex: 0 0 4rem")
+        //-     img.hidden.opacity-0.checked-visible.checked-opacity-1.transition-200ms(height="64" src="img/ic_check_circle_white_24px.svg" width="64")
+        //-   p.p-l-1 I am a <span class="p-b-2px border-white-05 border-b-2px border-b-6px-ns">player over the age of 13</span> or <span class="p-b-2px border-white-05 border-b-6px-ns">a parent of a player under the age of 13</span>
+        //-
+        //- label.pointer.flex.items-center.p-b-2
+        //-   input.display-none(name="type" type="radio" value="other")
+        //-   .flex.justify-center.items-center.w-4.h-4.rounded.border-white-02.border-2px(style="flex: 0 0 4rem")
+        //-     img.hidden.opacity-0.checked-visible.checked-opacity-1.transition-200ms(height="64" src="img/ic_check_circle_white_24px.svg" width="64")
+        //-   p.p-l-1 I am a grassroot community member; Sunday League manager, PE Teacher or avid touchline fan</span>
+
+        button.pointer.w-whole.rounded-4px.active-bg-white.active-black.bg-black.white.transition-200ms
+          span.pointer-events-none.flex.justify-center.items-center.h-3.h-4-ns.p-r-05.p-l-05.p-r-1-ns.p-l-1-ns Sign me up for updates!
+
+  .flex-ns.justify-between-ns.items-center-ns.p-2.border-white-03.border-t-1px
+    p.p-b-1.p-b-0-ns.center Copyright ©2017 Spotters
+    .flex.justify-center.items-center
+      a.p-r-2(href="#")
+        img.bottom(height="32" src="img/twitter-white.svg" width="32")
+      a.p-r-2(href="#")
+        img.bottom(height="32" src="img/facebook-white.svg" width="32")
+      a(href="#")
+        img.bottom(height="32" src="img/linked-in-white.svg" width="32")
