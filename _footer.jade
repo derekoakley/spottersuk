@@ -1,15 +1,15 @@
-footer.relative.bg-green.white(data-signup="form")
+footer#signup.relative.bg-green.white
   .p-t-2.p-r-2.p-b-2.p-l-2.p-5-ns
     h2.flex.justify-center.p-b-2.p-b-5-ns.font-size-1-5.font-size-3-ns.center
       span.w-40-max Be amongst the first 10,000 to hear when we launch
 
     .flex.justify-center.font-size-1-5-ns
       form.w-40-max
-        input.w-whole.m-b-1.p-1.rounded-4px.bg-white.black.ph-green.border-0.transition-200ms(autocomplete="email" class="ph-#{ color } border-#{ color }" type="email" placeholder="Your E-mail address" style="background-blend-mode: color;")
+        input.w-whole.m-b-1.p-1.rounded-4px.bg-white.black.ph-green.border-white.border-2px.transition-200ms(autocomplete="email" class="ph-#{ color } border-#{ color }" type="email" placeholder="Your E-mail address" required)
 
-        input.w-whole.m-b-1.p-1.rounded-4px.bg-white.black.ph-green.border-0.transition-200ms(autocomplete="given-name" class="ph-#{ color } border-#{ color }" type="text" placeholder="First Name")
+        input.w-whole.m-b-1.p-1.rounded-4px.bg-white.black.ph-green.border-white.border-2px.transition-200ms(autocomplete="given-name" class="ph-#{ color } border-#{ color }" type="text" placeholder="First Name" required)
 
-        input.w-whole.m-b-1.p-1.rounded-4px.bg-white.black.ph-green.border-0.transition-200ms(autocomplete="family-name" class="ph-#{ color } border-#{ color }" type="text" placeholder="Surname")
+        input.w-whole.m-b-1.p-1.rounded-4px.bg-white.black.ph-green.border-white.border-2px.transition-200ms(autocomplete="family-name" class="ph-#{ color } border-#{ color }" type="text" placeholder="Surname" required)
 
         label.pointer.flex.items-center.p-b-2
           input.no-d(type="checkbox")
@@ -21,7 +21,7 @@ footer.relative.bg-green.white(data-signup="form")
             span  or  
             span.p-b-2px.border-white-05.border-b-2px.border-b-4px-ns a parent of a player under the age of 13
 
-        button.pointer.w-whole.rounded-4px.active-bg-white.active-black.bg-black.white.transition-200ms
+        button.pointer.w-whole.rounded-4px.active-bg-white.active-black.bg-black.white.transition-200ms(data-signup="button")
           span.pointer-events-none.flex.justify-center.items-center.h-3.h-4-ns.p-r-05.p-l-05.p-r-1-ns.p-l-1-ns Sign me up for updates!
 
   .flex-ns.justify-between-ns.items-center-ns.p-2.border-white-03.border-t-1px

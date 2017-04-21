@@ -318,11 +318,16 @@
 })(window, document);
 
 var signup = (function() {
-	var $main = document.getElementsByTagName("main")[0],
-		$form = document.querySelector("[data-signup=form]");
+	var $main, $form, $input, validateInline = false;
 
 	var init = function() {
+		$main = document.getElementsByTagName("main")[0];
+		$form = document.getElementById("signup");
+		$input = $form.getElementsByTagName("input");
+
 		$main.addEventListener("click", signUpScrollTo);
+		$form.addEventListener("click", signUpButton);
+		$form.addEventListener("input", validateInputRealtime, true);
 	};
 
 	var signUpScrollTo = function(e) {
@@ -331,5 +336,39 @@ var signup = (function() {
 		$form.scrollIntoView({ behavior: "smooth" });
 	};
 
-	init();
+	var signUpButton = function(e) {
+		if (e.target.dataset.signup !== "button") return;
+
+		if (validateInline === false) validateInline = true;
+
+		for (i = 0; i < $input.length; i++) {
+			validateInput($input[i]);
+		}
+	};
+
+	var validateInputRealtime = function(e) {
+		if (validateInline === false) return;
+
+		validateInput(e.target);
+	};
+
+	var validateInput = function($el) {
+		if ($el.validity.valid === false) {
+			$el.classList.remove("border-white");
+			$el.classList.remove("ph-green");
+			$el.classList.add("border-red");
+			$el.classList.add("ph-red");
+		} else {
+			$el.classList.remove("border-red");
+			$el.classList.remove("ph-red");
+			$el.classList.add("border-white");
+			$el.classList.add("ph-green");
+		}
+	};
+
+	if (document.readyState === "interactive") {
+		init();
+	} else {
+		document.addEventListener("DOMContentLoaded", init);
+	}
 })();

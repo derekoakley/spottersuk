@@ -4,16 +4,15 @@ html.m-0.p-0
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible" content="IE=Edge")
     title Spotters
-    meta(decscription="")
+    meta(decscription="Connect with the Grassroots Football Community")
     meta(property="og:image" content="")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     link(rel="apple-touch-icon" href="apple-touch-icon.png")
-    link(inline rel="stylesheet" href="css/style.css")
+    link(rel="stylesheet" href="css/style.css" inline)
     link(rel="preconnect" href="https://res.cloudinary.com" crossorigin)
-    //link(rel="preload" as="image" href="https://res.cloudinary.com/afferently/image/upload/#{ brightness }#{ img }" crossorigin)
+    script(src="js/signup.js" async defer)
   body.m-0.p-0
     main
       != partial("_header")
       != yield
     != partial("_footer")
-    script(src='js/signup.js')

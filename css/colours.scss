@@ -2,6 +2,7 @@
  */
 $green: #19A974;
 $light-green: #9EEBCF;
+$red: red;
 
 /*=Stripes
  */
@@ -84,6 +85,23 @@ $stripe-2-dark: rgba(0,0,0,1);
   border-color: $green;
 }
 
+/*=Red*/
+.ph-red::-webkit-input-placeholder {
+  color: $red;
+}
+.ph-red::-moz-placeholder {
+  color: $red;
+}
+.ph-red:-ms-input-placeholder {
+  color: $red;
+}
+.ph-red:-moz-placeholder {
+  color: $red;
+}
+.border-red {
+  border-color: $red;
+}
+
 /*=White*/
 .bg-white {
   background-color: white;
@@ -135,6 +153,9 @@ $stripe-2-dark: rgba(0,0,0,1);
 }
 .ph-white:-moz-placeholder {
   color: white;
+}
+.border-white {
+  border-color: white;
 }
 .border-white-02 {
   border-color: rgba(255,255,255,.2);
