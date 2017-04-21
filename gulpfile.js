@@ -10,7 +10,8 @@ gulp.task("clean", function() {
 		"www/css/**/*.css",
 		"!www/css/**/style.css",
 		"www/js/*-debug.js",
-		"www/node_modules/**"
+		"www/node_modules/**",
+		"!node_modules/**"
 	]);
 });
 

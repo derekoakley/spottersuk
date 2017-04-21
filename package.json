@@ -1,0 +1,26 @@
+{
+  "name": "spottersuk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derekoakley/spottersuk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/derekoakley/spottersuk/issues"
+  },
+  "homepage": "https://github.com/derekoakley/spottersuk#readme",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-inline-source": "^3.1.0",
+    "gulp-minify": "0.0.15"
+  }
+}
