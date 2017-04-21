@@ -1,9 +1,8 @@
 var gulp = require("gulp");
-var cleanCSS = require("gulp-clean-css");
 var del = require("del");
 var imagemin = require("gulp-imagemin");
+var inlinesource = require("gulp-inline-source");
 var minify = require("gulp-minify");
-var rename = require("gulp-rename");
 
 gulp.task("clean", function() {
 	return del([
@@ -45,12 +44,12 @@ gulp.task("compress", function() {
 		.pipe(gulp.dest("www/js"));
 });
 
-gulp.task("build", ["images", "compress"]);
+gulp.task("inlinesource", function() {
+	var options = {
+		compress: false
+	};
 
-gulp.task("minify-css", function() {
-	return gulp
-		.src("css/*.css")
-		.pipe(cleanCSS({ compatibility: "ie8" }))
-		.pipe(rename({ suffix: ".min" }))
-		.pipe(gulp.dest("css/"));
+	return gulp.src("www/*.html").pipe(inlinesource()).pipe(gulp.dest("www/"));
 });
+
+gulp.task("build", ["images", "compress", "inlinesource"]);
