@@ -8,13 +8,8 @@ $washed-red: #FFDFDF;
 /*=Stripes
  */
 $stripe-1-light: rgba(255,255,255,.9);
-$stripe-1-dark: rgba(255,255,255,.8);
-$stripe-2-light: rgba(0,0,0,.8);
-$stripe-2-dark: rgba(0,0,0,1);
-
-$stripe-1-light: rgba(255,255,255,.5);
-$stripe-1-dark: rgba(255,255,255,.2);
-$stripe-2-light: rgba(0,0,0,.85);
+$stripe-1-dark: rgba(255,255,255,.5);
+$stripe-2-light: rgba(0,0,0,.9);
 $stripe-2-dark: rgba(0,0,0,1);
 
 /*=Black*/
@@ -49,7 +44,7 @@ $stripe-2-dark: rgba(0,0,0,1);
   background-color: rgba(0,0,0,.9);
 }
 .bg-black-scrim {
- background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5));
+ background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.7));
 }
 .black {
   color: black;
@@ -176,11 +171,17 @@ $stripe-2-dark: rgba(0,0,0,1);
 @media screen and (min-width: 640px) {
 
   /*=Black*/
+  .bg-black-ns {
+    background-color: black;
+  }
   .black-ns {
     color: black;
   }
 
   /*=White*/
+  .bg-white-ns {
+    background-color: white;
+  }
   .white-ns {
     color: white;
   }
@@ -189,6 +190,11 @@ $stripe-2-dark: rgba(0,0,0,1);
 
 /*=Visited
  */
+
+/*=black*/
+.visited-black:visited {
+ color: black;
+}
 
 /*=White*/
 .visited-white:visited {
@@ -205,6 +211,11 @@ $stripe-2-dark: rgba(0,0,0,1);
 }
 .active-black:active {
   color: black;
+}
+
+/*=Green*/
+.active-green:active {
+  color: green;
 }
 
 /*=White*/
