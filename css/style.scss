@@ -1,6 +1,3 @@
-$ns: 40rem;
-$l: 70rem;
-
 @import './normalize';
 
 * {
@@ -48,12 +45,12 @@ input {
 @import './font';
 @import './flexbox';
 @import './opacity';
-@import './overflow';
+//@import './overflow';
 @import './pointer';
 @import './position';
 @import './text';
 @import './transform';
-@import './transition';
+//@import './transition';
 @import './visibility';
 @import './zindex';
 @import './colours';
