@@ -3,14 +3,13 @@
 .hyphens {
   hyphens: auto;
 }
-
-/*=Text Decoration*/
-.no-underline {
-  text-decoration: none;
-}
-
 @media screen and (min-width: $l) {
   .no-hyphens-l {
     hyphens: none;
   }
+}
+
+/*=Text Decoration*/
+.no-underline {
+  text-decoration: none;
 }
