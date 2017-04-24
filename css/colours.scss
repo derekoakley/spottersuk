@@ -93,68 +93,20 @@ $washed-red: #FFDFDF;
 .bg-white {
   background-color: white;
 }
-.bg-white-01 {
-  background-color: rgba(255,255,255,.1);
-}
-.bg-white-02 {
-  background-color: rgba(255,255,255,.2);
-}
 .bg-white-03 {
   background-color: rgba(255,255,255,.3);
-}
-.bg-white-04 {
-  background-color: rgba(255,255,255,.4);
-}
-.bg-white-05 {
-  background-color: rgba(255,255,255,.5);
-}
-.bg-white-06 {
-  background-color: rgba(255,255,255,.6);
-}
-.bg-white-07 {
-  background-color: rgba(255,255,255,.7);
-}
-.bg-white-08 {
-  background-color: rgba(255,255,255,.8);
-}
-.bg-white-09 {
-  background-color: rgba(255,255,255,.9);
 }
 .white {
   color: white;
 }
-.white-02 {
-  color: rgba(255,255,255,.2);
-}
-.white-05 {
-  color: rgba(255,255,255,.5);
-}
-.ph-white::-webkit-input-placeholder {
-  color: white;
-}
-.ph-white::-moz-placeholder {
-  color: white;
-}
-.ph-white:-ms-input-placeholder {
-  color: white;
-}
-.ph-white:-moz-placeholder {
-  color: white;
+.white-03 {
+  color: rgba(255,255,255,.3);
 }
 .border-white {
   border-color: white;
 }
-.border-white-02 {
-  border-color: rgba(255,255,255,.2);
-}
 .border-white-03 {
   border-color: rgba(255,255,255,.3);
-}
-.border-white-04 {
-  border-color: rgba(255,255,255,.4);
-}
-.border-white-05 {
-  border-color: rgba(255,255,255,.5);
 }
 
 @media screen and (min-width: $ns) {

@@ -259,6 +259,12 @@
     padding-bottom: 8rem;
   }
 }
+@media screen and (min-width: $l) {
+  .p-4-l {
+    padding: 4rem;
+  }
+}
+
 
 /*=Width */
 .w-0 {
@@ -307,7 +313,7 @@
   max-width: 50rem;
 }
 .w-100-max {
-  max-width: 100rem;
+  max-width: 120rem;
 }
 @media screen and (min-width: $ns) {
   .w-third-ns {
@@ -379,6 +385,10 @@
   border-top-style: solid;
   border-top-width: 1px;
 }
+.border-r-1px {
+  border-right-style: solid;
+  border-right-width: 1px;
+}
 .border-b-1px {
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -448,6 +458,13 @@
   border-left-width: 1rem;
 }
 @media screen and (min-width: $ns) {
+  .border-0-ns {
+    border: 0;
+  }
+  .border-r-1px-ns {
+    border-right-style: solid;
+    border-right-width: 1px;
+  }
   .border-3px-ns {
     border-style: solid;
     border-width: 3px;
@@ -500,5 +517,5 @@
 
 /*=Box Shadow*/
 .shadow {
-  box-shadow: 0 0 16px 4px rgba(0,0,0,.3);
+  box-shadow: 0 0 16px 4px rgba(0,0,0,1);
 }
