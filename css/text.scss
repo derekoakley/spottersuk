@@ -7,8 +7,8 @@
   text-decoration: none;
 }
 
-@media screen and (min-width: 40rem) {
-  .no-hyphens-ns {
+@media screen and (min-width: $l) {
+  .no-hyphens-l {
     hyphens: none;
   }
 }

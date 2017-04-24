@@ -14,7 +14,7 @@
 .m-b-1 {
   margin-bottom: 1rem;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: $ns) {
   .m-t-05-ns {
     margin-top: .5rem;
   }
@@ -150,7 +150,7 @@
 .p-7 {
   padding: 7rem;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: $ns) {
   .p-0-ns {
     padding: 0;
   }
@@ -195,6 +195,21 @@
   }
   .p-l-1-ns {
     padding-left: 1rem;
+  }
+  .p-1-5-ns {
+    padding: 1.5rem;
+  }
+  .p-t-1-5-ns {
+    padding-top: 1.5rem;
+  }
+  .p-r-1-5-ns {
+    padding-right: 1.5rem;
+  }
+  .p-b-1-5-ns {
+    padding-bottom: 1.5rem;
+  }
+  .p-l-1-5-ns {
+    padding-left: 1.5rem;
   }
   .p-2-ns {
     padding: 2rem;
@@ -247,6 +262,9 @@
 .w-0 {
   width: 0;
 }
+.w-third {
+  width: 33.3%
+}
 .w-quarter {
   width: 25%;
 }
@@ -271,6 +289,9 @@
 .w-5 {
   width: 5rem;
 }
+.w-30 {
+  width: 30rem;
+}
 .w-30-max {
   max-width: 30rem;
 }
@@ -283,7 +304,13 @@
 .w-50-max {
   max-width: 50rem;
 }
-@media screen and (min-width: 640px) {
+.w-100-max {
+  max-width: 100rem;
+}
+@media screen and (min-width: $ns) {
+  .w-third-ns {
+    width: 33.3%
+  }
   .w-half-ns {
     width: 50%;
   }
@@ -323,7 +350,7 @@
 .h-6 {
   height: 6rem;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: $ns) {
   .h-2-ns {
     height: 2rem;
   }
@@ -418,7 +445,7 @@
   border-left-style: solid;
   border-left-width: 1rem;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: $ns) {
   .border-3px-ns {
     border-style: solid;
     border-width: 3px;

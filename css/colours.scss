@@ -1,16 +1,8 @@
 /*=Colours
  */
 $green: #19A974;
-$light-green: #9EEBCF;
 $red: #FF4136;
 $washed-red: #FFDFDF;
-
-/*=Stripes
- */
-$stripe-1-light: rgba(255,255,255,.9);
-$stripe-1-dark: rgba(255,255,255,.5);
-$stripe-2-light: rgba(0,0,0,.9);
-$stripe-2-dark: rgba(0,0,0,1);
 
 /*=Black*/
 .bg-black {
@@ -51,11 +43,6 @@ $stripe-2-dark: rgba(0,0,0,1);
 }
 .border-black {
   border-color: black;
-}
-
-/*=Light Green*/
-.bg-light-green {
-  background-color: $light-green;
 }
 
 /*=Green*/
@@ -168,7 +155,7 @@ $stripe-2-dark: rgba(0,0,0,1);
   border-color: rgba(255,255,255,.5);
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: $ns) {
 
   /*=Black*/
   .bg-black-ns {
@@ -226,64 +213,10 @@ $stripe-2-dark: rgba(0,0,0,1);
   color: white;
 }
 
-
-/*=Background Stripes
- */
-.bg-stripe-1-24px {
- background: repeating-linear-gradient(-60deg, $stripe-1-light, $stripe-1-light 12px, $stripe-1-dark 12px, $stripe-1-dark 24px);
-}
-.bg-stripe-1-32px {
- background: repeating-linear-gradient(-60deg, $stripe-1-light, $stripe-1-light 16px, $stripe-1-dark 16px, $stripe-1-dark 32px);
-}
-.bg-stripe-1-64px {
- background: repeating-linear-gradient(-60deg, $stripe-1-light, $stripe-1-light 32px, $stripe-1-dark 32px, $stripe-1-dark 64px);
-}
-.bg-stripe-1-128px {
- background: repeating-linear-gradient(-60deg, $stripe-1-light, $stripe-1-light 64px, $stripe-1-dark 64px, $stripe-1-dark 128px);
-}
-.bg-stripe-2-24px {
- background: repeating-linear-gradient(-60deg, $stripe-2-light, $stripe-2-light 12px, $stripe-2-dark 12px, $stripe-2-dark 24px);
-}
-.bg-stripe-2-32px {
- background: repeating-linear-gradient(-60deg, $stripe-2-light, $stripe-2-light 16px, $stripe-2-dark 16px, $stripe-2-dark 32px);
-}
-.bg-stripe-2-64px {
- background: repeating-linear-gradient(-60deg, $stripe-2-light, $stripe-2-light 32px, $stripe-2-dark 32px, $stripe-2-dark 64px);
-}
-.bg-stripe-2-128px {
- background: repeating-linear-gradient(-60deg, $stripe-2-light, $stripe-2-light 64px, $stripe-2-dark 64px, $stripe-2-dark 128px);
-}
-@media screen and (min-width: 640px) {
-  .bg-stripe-1-24px-ns {
-    background: repeating-linear-gradient(-60deg, $stripe-1-light, $stripe-1-light 12px, $stripe-1-dark 12px, $stripe-1-dark 24px);
-  }
-  .bg-stripe-1-32px-ns {
-    background: repeating-linear-gradient(-60deg, $stripe-1-light, $stripe-1-light 16px, $stripe-1-dark 16px, $stripe-1-dark 32px);
-  }
-  .bg-stripe-1-64px-ns {
-    background: repeating-linear-gradient(-60deg, $stripe-1-light, $stripe-1-light 24px, $stripe-1-dark 24px, $stripe-1-dark 64px);
-  }
-  .bg-stripe-1-128px-ns {
-    background: repeating-linear-gradient(-60deg, $stripe-1-light, $stripe-1-light 64px, $stripe-1-dark 64px, $stripe-1-dark 128px);
-  }
-  .bg-stripe-2-24px-ns {
-    background: repeating-linear-gradient(-60deg, $stripe-2-light, $stripe-2-light 12px, $stripe-2-dark 12px, $stripe-2-dark 24px);
-  }
-  .bg-stripe-2-32px-ns {
-    background: repeating-linear-gradient(-60deg, $stripe-2-light, $stripe-2-light 16px, $stripe-2-dark 16px, $stripe-2-dark 32px);
-  }
-  .bg-stripe-2-64px-ns {
-    background: repeating-linear-gradient(-60deg, $stripe-2-light, $stripe-2-light 32px, $stripe-2-dark 32px, $stripe-2-dark 64px);
-  }
-  .bg-stripe-2-128px-ns {
-    background: repeating-linear-gradient(-60deg, $stripe-2-light, $stripe-2-light 64px, $stripe-2-dark 64px, $stripe-2-dark 128px);
-  }
-}
-
 .no-bg {
   background-color: transparent;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: $ns) {
   .no-bg-ns {
     background-color: transparent;
   }
