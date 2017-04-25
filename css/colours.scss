@@ -2,9 +2,11 @@
 
 /*=Colours
  */
-$green: #00a651;
 $red: #FF4136;
 $washed-red: #FFDFDF;
+$green: #00a651;
+$green: #00A960;
+$dark-green: #093826;
 
 /*=Black*/
 .bg-black {
@@ -45,6 +47,11 @@ $washed-red: #FFDFDF;
 }
 .border-black {
   border-color: black;
+}
+
+/*=Dark Green*/
+.border-dark-green {
+  border-color: $dark-green;
 }
 
 /*=Green*/
@@ -118,8 +125,40 @@ $washed-red: #FFDFDF;
   .bg-black-ns {
     background-color: black;
   }
+  .bg-black-01-ns {
+    background-color: rgba(0,0,0,.1);
+  }
+  .bg-black-02-ns {
+    background-color: rgba(0,0,0,.2);
+  }
+  .bg-black-03-ns {
+    background-color: rgba(0,0,0,.3);
+  }
+  .bg-black-04-ns {
+    background-color: rgba(0,0,0,.4);
+  }
+  .bg-black-05-ns {
+    background-color: rgba(0,0,0,.5);
+  }
+  .bg-black-06-ns {
+    background-color: rgba(0,0,0,.6);
+  }
+  .bg-black-07-ns {
+    background-color: rgba(0,0,0,.7);
+  }
+  .bg-black-08-ns {
+    background-color: rgba(0,0,0,.8);
+  }
+  .bg-black-09-ns {
+    background-color: rgba(0,0,0,.9);
+  }
   .black-ns {
     color: black;
+  }
+
+  /*=Dark Green*/
+  .border-dark-green-ns {
+    border-color: $dark-green;
   }
 
   /*=White*/
