@@ -1,4 +1,4 @@
-@import './normalize';
+@import 'css/normalize';
 
 * {
   box-sizing: border-box;
@@ -38,19 +38,19 @@ input {
   font-weight: inherit;
 }
 
-@import './align';
-@import './aspect-ratios';
-@import './box';
-@import './display';
-@import './font';
-@import './flexbox';
-@import './opacity';
+@import 'css/align';
+@import 'css/aspect-ratios';
+@import 'css/box';
+@import 'css/display';
+@import 'css/font';
+@import 'css/flexbox';
+@import 'css/opacity';
 //@import './overflow';
-@import './pointer';
-@import './position';
-@import './text';
-@import './transform';
+@import 'css/pointer';
+@import 'css/position';
+@import 'css/text';
+@import 'css/transform';
 //@import './transition';
-@import './visibility';
-@import './zindex';
-@import './colours';
+@import 'css/visibility';
+@import 'css/zindex';
+@import 'css/colours';
