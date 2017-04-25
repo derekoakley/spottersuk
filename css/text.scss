@@ -1,14 +1,5 @@
 @import './media';
 
-.hyphens {
-  hyphens: auto;
-}
-@media screen and (min-width: $l) {
-  .no-hyphens-l {
-    hyphens: none;
-  }
-}
-
 /*=Text Decoration*/
 .no-underline {
   text-decoration: none;

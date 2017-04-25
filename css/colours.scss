@@ -4,43 +4,15 @@
  */
 $red: #FF4136;
 $washed-red: #FFDFDF;
-$green: #00a651;
 $green: #00A860;
-$dark-green: #093826;
+$dark-green: #0C442E;
 
 /*=Black*/
 .bg-black {
   background-color: black;
 }
-.bg-black-01 {
-  background-color: rgba(0,0,0,.1);
-}
-.bg-black-02 {
-  background-color: rgba(0,0,0,.2);
-}
-.bg-black-03 {
-  background-color: rgba(0,0,0,.3);
-}
-.bg-black-04 {
-  background-color: rgba(0,0,0,.4);
-}
-.bg-black-05 {
-  background-color: rgba(0,0,0,.5);
-}
-.bg-black-06 {
-  background-color: rgba(0,0,0,.6);
-}
-.bg-black-07 {
-  background-color: rgba(0,0,0,.7);
-}
-.bg-black-08 {
-  background-color: rgba(0,0,0,.8);
-}
-.bg-black-09 {
-  background-color: rgba(0,0,0,.9);
-}
 .bg-black-scrim {
- background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.7));
+ background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.8));
 }
 .black {
   color: black;
@@ -118,58 +90,6 @@ $dark-green: #093826;
 .border-white-05 {
   border-color: rgba(255,255,255,.5);
 }
-
-@media screen and (min-width: $ns) {
-
-  /*=Black*/
-  .bg-black-ns {
-    background-color: black;
-  }
-  .bg-black-01-ns {
-    background-color: rgba(0,0,0,.1);
-  }
-  .bg-black-02-ns {
-    background-color: rgba(0,0,0,.2);
-  }
-  .bg-black-03-ns {
-    background-color: rgba(0,0,0,.3);
-  }
-  .bg-black-04-ns {
-    background-color: rgba(0,0,0,.4);
-  }
-  .bg-black-05-ns {
-    background-color: rgba(0,0,0,.5);
-  }
-  .bg-black-06-ns {
-    background-color: rgba(0,0,0,.6);
-  }
-  .bg-black-07-ns {
-    background-color: rgba(0,0,0,.7);
-  }
-  .bg-black-08-ns {
-    background-color: rgba(0,0,0,.8);
-  }
-  .bg-black-09-ns {
-    background-color: rgba(0,0,0,.9);
-  }
-  .black-ns {
-    color: black;
-  }
-
-  /*=Dark Green*/
-  .border-dark-green-ns {
-    border-color: $dark-green;
-  }
-
-  /*=White*/
-  .bg-white-ns {
-    background-color: white;
-  }
-  .white-ns {
-    color: white;
-  }
-}
-
 
 /*=Visited
  */
