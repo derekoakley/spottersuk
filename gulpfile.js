@@ -8,8 +8,8 @@ gulp.task("clean", function() {
 	return del([
 		"www/gulpfile.js",
 		"www/package.json",
-		"www/css/**/*.css",
-		"!www/css/**/style.css",
+		"www/style.css",
+		"www/css/**",
 		"www/js/*-debug.js",
 		"www/node_modules/**"
 	]);
