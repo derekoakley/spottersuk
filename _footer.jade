@@ -4,11 +4,11 @@ footer#signup.relative.bg-green.white
 
     .flex.justify-center.font-size-1-5-ns
       form.w-34-max-ns.w-44-max-l
-        input.w-whole.m-b-1.p-1.rounded-4px.bg-white.black.ph-green.border-0.transition-200ms(autocomplete="email" class="ph-#{ color } border-#{ color }" type="email" placeholder="Your E-mail address" required)
+        input.w-whole.m-b-1.p-1.rounded-4px.bg-white.black.ph-green.border-0.transition-200ms(autocomplete="email" aria-label="enter your e-mail address" class="ph-#{ color } border-#{ color }" type="email" placeholder="Your E-mail address" required)
 
-        input.w-whole.m-b-1.p-1.rounded-4px.bg-white.black.ph-green.border-0.transition-200ms(autocomplete="given-name" class="ph-#{ color } border-#{ color }" type="text" placeholder="First Name" required)
+        input.w-whole.m-b-1.p-1.rounded-4px.bg-white.black.ph-green.border-0.transition-200ms(autocomplete="given-name" aria-label="enter your first name" class="ph-#{ color } border-#{ color }" type="text" placeholder="First Name" required)
 
-        input.w-whole.m-b-1.p-1.rounded-4px.bg-white.black.ph-green.border-0.transition-200ms(autocomplete="family-name" class="ph-#{ color } border-#{ color }" type="text" placeholder="Surname" required)
+        input.w-whole.m-b-1.p-1.rounded-4px.bg-white.black.ph-green.border-0.transition-200ms(autocomplete="family-name" aria-label="enter your surname" class="ph-#{ color } border-#{ color }" type="text" placeholder="Surname" required)
 
         button.pointer.w-whole.rounded-4px.active-bg-white.active-black.bg-black.white.transition-200ms(data-signup="button")
           span.pointer-events-none.flex.justify-center.items-center.h-3.h-4-ns.p-r-05.p-l-05.p-r-1-ns.p-l-1-ns Sign Up
@@ -18,9 +18,9 @@ footer#signup.relative.bg-green.white
       span.white-05 ©2017 
       span.montefiore-bold Spotters
     .flex.justify-center.items-center
-      a.p-r-2(href="#")
-        img.bottom(height="32" src="img/twitter-white.svg" width="32")
-      a.p-r-2(href="#")
-        img.bottom(height="32" src="img/facebook-white.svg" width="32")
-      a(href="#")
-        img.bottom(height="32" src="img/linked-in-white.svg" width="32")
+      a.p-r-2(href="#" rel="nofollow")
+        img.bottom(alt="Visit us on twitter" height="32" src="img/twitter-white.svg" width="32")
+      a.p-r-2(href="#" rel="nofollow")
+        img.bottom(alt="Visit our facebook page" height="32" src="img/facebook-white.svg" width="32")
+      a(href="#" rel="nofollow")
+        img.bottom(alt="Visit our linked-in profile" height="32" src="img/linked-in-white.svg" width="32")
