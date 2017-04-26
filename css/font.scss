@@ -2,14 +2,15 @@ $ns: 40rem;
 $l: 70rem;
 
 @font-face {
-  font-family: "Montefiore Bold Condensed";
-  src: url("fonts/montefiore-bold-condensed.otf");
-  font-weight: bold;
+    font-family: 'montefiorecondensed_bold';
+    src: url('fonts/montefiore-bold-condensed.woff2') format('woff2'),
+         url('fonts/montefiore-bold-condensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .monte-bold {
-  font-family: "Montefiore Bold Condensed", sans-serif;
-  font-weight: bold;
+  font-family: 'montefiorecondensed_bold', sans-serif;
   text-transform: uppercase;
   line-height: 1 !important;
 }
