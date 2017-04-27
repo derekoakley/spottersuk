@@ -322,10 +322,8 @@ var signup = (function() {
 
 	var stateEnum = {
 		thankyou: 1,
-		confirmation: 2,
 		properties: {
-			1: { name: "thankyou", value: 1 },
-			2: { name: "confirmation", value: 2 }
+			1: { name: "thankyou", value: 1 }
 		}
 	};
 
