@@ -320,15 +320,6 @@
 var signup = (function() {
 	var $main, $form, $input, validateInline = false;
 
-	var stateEnum = {
-		thankyou: 1,
-		properties: {
-			1: { name: "thankyou", value: 1 }
-		}
-	};
-
-	var state = stateEnum[window.location.hash.substring(1)];
-
 	var init = function() {
 		$main = document.getElementsByTagName("main")[0];
 		$form = document.getElementById("signup");
@@ -337,13 +328,6 @@ var signup = (function() {
 		$main.addEventListener("click", signUpScrollTo);
 		$form.addEventListener("click", signUpButton);
 		$form.addEventListener("input", validateInputRealtime, true);
-
-		if (typeof state !== "undefined") {
-			$popup = document.querySelector(
-				"[data-signup=" + stateEnum.properties[state].name + "]"
-			);
-			$popup.classList.remove("no-d");
-		}
 	};
 
 	var signUpScrollTo = function(e) {
