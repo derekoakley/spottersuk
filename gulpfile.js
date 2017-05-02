@@ -11,6 +11,7 @@ var fs = require("fs");
 gulp.task("clean", function() {
 	return del([
 		"faviconData.json",
+		"manifest.json",
 		"www/gulpfile.js",
 		"www/package.json",
 		"www/style.css",
