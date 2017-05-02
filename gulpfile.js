@@ -1,5 +1,6 @@
 var gulp = require("gulp");
 var gulpSequence = require("gulp-sequence");
+var cp = require("child_process");
 var del = require("del");
 var imagemin = require("gulp-imagemin");
 var inlinesource = require("gulp-inline-source");
@@ -19,18 +20,8 @@ gulp.task("clean", function() {
 	]);
 });
 
-gulp.task("images", function() {
-	return gulp
-		.src("img/*")
-		.pipe(
-			imagemin({
-				multipass: true,
-				optimizationLevel: 7,
-				progressive: true,
-				svgoPlugins: [{ removeViewBox: false }]
-			})
-		)
-		.pipe(gulp.dest("www/img"));
+gulp.task("compile", function(done) {
+	cp.exec("harp compile", { stdio: "inherit" }).on("close", done);
 });
 
 gulp.task("compress", function() {
@@ -49,6 +40,20 @@ gulp.task("compress", function() {
 		.pipe(gulp.dest("www/js"));
 });
 
+gulp.task("images", function() {
+	return gulp
+		.src("img/*")
+		.pipe(
+			imagemin({
+				multipass: true,
+				optimizationLevel: 7,
+				progressive: true,
+				svgoPlugins: [{ removeViewBox: false }]
+			})
+		)
+		.pipe(gulp.dest("www/img"));
+});
+
 gulp.task("inlinesource", function() {
 	var options = {
 		compress: false
@@ -56,6 +61,8 @@ gulp.task("inlinesource", function() {
 
 	return gulp.src("www/*.html").pipe(inlinesource()).pipe(gulp.dest("www/"));
 });
+
+// RealFaviconGenerator
 
 // File where the favicon markups are stored
 var FAVICON_DATA_FILE = "faviconData.json";
@@ -73,7 +80,7 @@ gulp.task("generate-favicon", function(done) {
 			design: {
 				ios: {
 					pictureAspect: "backgroundAndMargin",
-					backgroundColor: "#ffffff",
+					backgroundColor: "#00a860",
 					margin: "14%",
 					assets: {
 						ios6AndPriorIcons: false,
@@ -85,13 +92,13 @@ gulp.task("generate-favicon", function(done) {
 				desktopBrowser: {},
 				windows: {
 					pictureAspect: "noChange",
-					backgroundColor: "#da532c",
+					backgroundColor: "#00a860",
 					onConflict: "override",
 					assets: {
 						windows80Ie10Tile: false,
 						windows10Ie11EdgeTiles: {
 							small: false,
-							medium: false,
+							medium: true,
 							big: false,
 							rectangle: false
 						}
@@ -99,7 +106,7 @@ gulp.task("generate-favicon", function(done) {
 				},
 				androidChrome: {
 					pictureAspect: "noChange",
-					themeColor: "#ffffff",
+					themeColor: "#00a860",
 					manifest: {
 						display: "standalone",
 						orientation: "notSet",
@@ -114,16 +121,12 @@ gulp.task("generate-favicon", function(done) {
 				safariPinnedTab: {
 					pictureAspect: "blackAndWhite",
 					threshold: 90,
-					themeColor: "#5bbad5"
+					themeColor: "#00a860"
 				}
 			},
 			settings: {
 				scalingAlgorithm: "Mitchell",
 				errorOnImageTooSmall: false
-			},
-			versioning: {
-				paramName: "v",
-				paramValue: "A0Rxll2Am6"
 			},
 			markupFile: FAVICON_DATA_FILE
 		},
@@ -165,6 +168,7 @@ gulp.task("check-for-favicon-update", function(done) {
 gulp.task(
 	"build",
 	gulpSequence(
+		"compile",
 		["images", "compress", "inlinesource"],
 		"generate-favicon",
 		"check-for-favicon-update",
