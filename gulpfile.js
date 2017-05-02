@@ -9,25 +9,30 @@ var realFavicon = require("gulp-real-favicon");
 var fs = require("fs");
 
 gulp.task("clean", function() {
-	return del([
-		"faviconData.json",
-		"manifest.json",
-		"www/gulpfile.js",
-		"www/package.json",
-		"www/style.css",
-		"www/css/**",
-		"www/js/*-debug.js",
-		"www/node_modules/**"
-	]);
+	return del(
+		[
+			"faviconData.json",
+			"manifest.json",
+			prod + "/gulpfile.js",
+			prod + "/package.json",
+			prod + "/style.css",
+			prod + "/css/**",
+			prod + "/js/*-debug.js",
+			prod + "/node_modules/**"
+		],
+		{ force: true }
+	);
 });
 
+var prod = "../SpottersSplash";
+
 gulp.task("compile", function(done) {
-	cp.exec("harp compile", { stdio: "inherit" }).on("close", done);
+	cp.exec("harp compile . " + prod, { stdio: "inherit" }).on("close", done);
 });
 
 gulp.task("compress", function() {
 	gulp
-		.src("js/*.js")
+		.src(prod + "/js/*.js")
 		.pipe(
 			minify({
 				ext: {
@@ -38,12 +43,12 @@ gulp.task("compress", function() {
 				ignoreFiles: [".combo.js", "-min.js"]
 			})
 		)
-		.pipe(gulp.dest("www/js"));
+		.pipe(gulp.dest(prod + "/js"));
 });
 
-gulp.task("images", function() {
+gulp.task("imagemin", function() {
 	return gulp
-		.src("img/*")
+		.src(prod + "/img/*")
 		.pipe(
 			imagemin({
 				multipass: true,
@@ -52,7 +57,7 @@ gulp.task("images", function() {
 				svgoPlugins: [{ removeViewBox: false }]
 			})
 		)
-		.pipe(gulp.dest("www/img"));
+		.pipe(gulp.dest(prod + "/img"));
 });
 
 gulp.task("inlinesource", function() {
@@ -60,7 +65,10 @@ gulp.task("inlinesource", function() {
 		compress: false
 	};
 
-	return gulp.src("www/*.html").pipe(inlinesource()).pipe(gulp.dest("www/"));
+	return gulp
+		.src(prod + "/*.html")
+		.pipe(inlinesource())
+		.pipe(gulp.dest(prod + "/"));
 });
 
 // RealFaviconGenerator
@@ -75,8 +83,8 @@ var FAVICON_DATA_FILE = "faviconData.json";
 gulp.task("generate-favicon", function(done) {
 	realFavicon.generateFavicon(
 		{
-			masterPicture: "img/favicon.png",
-			dest: "www/",
+			masterPicture: prod + "/img/favicon.png",
+			dest: prod,
 			iconsPath: "/",
 			design: {
 				ios: {
@@ -137,18 +145,32 @@ gulp.task("generate-favicon", function(done) {
 	);
 });
 
+gulp.task("imagemin-favicon", function() {
+	return gulp
+		.src(prod + "/*")
+		.pipe(
+			imagemin({
+				multipass: true,
+				optimizationLevel: 7,
+				progressive: true,
+				svgoPlugins: [{ removeViewBox: false }]
+			})
+		)
+		.pipe(gulp.dest(prod));
+});
+
 // Inject the favicon markups in your HTML pages. You should run
 // this task whenever you modify a page. You can keep this task
 // as is or refactor your existing HTML pipeline.
 gulp.task("inject-favicon-markups", function() {
 	return gulp
-		.src(["www/*.html"])
+		.src([prod + "/*.html"])
 		.pipe(
 			realFavicon.injectFaviconMarkups(
 				JSON.parse(fs.readFileSync(FAVICON_DATA_FILE)).favicon.html_code
 			)
 		)
-		.pipe(gulp.dest("www"));
+		.pipe(gulp.dest(prod));
 });
 
 // Check for updates on RealFaviconGenerator (think: Apple has just
@@ -170,8 +192,9 @@ gulp.task(
 	"build",
 	gulpSequence(
 		"compile",
-		["images", "compress", "inlinesource"],
+		["imagemin", "compress", "inlinesource"],
 		"generate-favicon",
+		"imagemin-favicon",
 		"check-for-favicon-update",
 		"inject-favicon-markups",
 		"clean"
