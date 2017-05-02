@@ -322,7 +322,7 @@ var signup = (function() {
 
 	var init = function() {
 		$main = document.getElementsByTagName("main")[0];
-		$form = document.getElementById("signup");
+		$form = document.querySelector("[data-signup=form]");
 		$input = $form.getElementsByTagName("input");
 
 		$main.addEventListener("click", signUpScrollTo);
