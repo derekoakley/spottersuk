@@ -16,6 +16,9 @@
 .m-b-1 {
   margin-bottom: 1rem;
 }
+.m-b-1-5 {
+  margin-bottom: 1.5rem;
+}
 @media screen and (min-width: $ns) {
   .m-t-05-ns {
     margin-top: .5rem;
@@ -212,6 +215,9 @@
   }
   .p-l-2-ns {
     padding-left: 2rem;
+  }
+  .p-b-2-5-ns {
+    padding-bottom: 2.5rem;
   }
   .p-4-ns {
     padding: 4rem;

@@ -327,6 +327,7 @@ var signup = (function() {
 
 		$main.addEventListener("click", signUpScrollTo);
 		$form.addEventListener("click", signUpButton);
+		$form.addEventListener("submit", signUpSubmit);
 		$form.addEventListener("input", validateInputRealtime, true);
 	};
 
@@ -342,8 +343,21 @@ var signup = (function() {
 		if (validateInline === false) validateInline = true;
 
 		for (i = 0; i < $input.length; i++) {
-			validateInput($input[i]);
+			if ($input[i].willValidate) validateInput($input[i]);
 		}
+	};
+
+	// For browsers that submit invalid forms.
+	var signUpSubmit = function(e) {
+		if (e.target.checkValidity()) return;
+
+		e.preventDefault();
+
+		for (i = 0; i < $input.length; i++) {
+			if ($input[i].willValidate && $input[i].validity.valid === false) return;
+		}
+
+		$form.submit();
 	};
 
 	var validateInputRealtime = function(e) {

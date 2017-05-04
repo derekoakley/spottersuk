@@ -45,6 +45,9 @@
 .content-around  { align-content: space-around; }
 .content-stretch { align-content: stretch; }
 
+.order-0 { order: 0; }
+.order-1 { order: 1; }
+
 @media screen and (min-width: $ns) {
   .flex-ns { display: flex; }
   .inline-flex-ns { display: inline-flex; }

@@ -1,38 +1,41 @@
 footer.relative.bg-green.white
   .flex.justify-center.p-t-2.p-r-1.p-b-2.p-l-1.p-t-4-ns.p-b-4-ns
     .w-40-max
-      p.p-b-2.p-b-4-ns.montefiore-condensed-bold.font-size-2-25.font-size-4-ns.font-size-5-l.center Be amongst the first to hear when we launch the UK’s only social network for Grassroots football
+      p.p-b-05.p-b-2-5-ns.montefiore-condensed-bold.font-size-2-25.font-size-4-ns.font-size-5-l.center Be amongst the first to hear when we launch the UK’s only social network for Grassroots football
       
-      form.font-size-1-5-ns(action="https://spottersapp.us15.list-manage.com/subscribe/post" data-signup="form" method="POST")
+      form(action="https://spottersapp.us15.list-manage.com/subscribe/post" data-signup="form" method="POST")
         input(type="hidden" name="u" value="56175f2adf68ffe66e602a050")
         input(type="hidden" name="id" value="3fe7f529bd")
+        
+        label.flex.flex-column
+          input.order-1.w-whole.p-1.font-size-1-5-ns.rounded-4px.bg-white.black.ph-green.border-0.transition-200ms(
+            autocapitalize="off"
+            autocomplete="email"
+            name="MERGE0"
+            placeholder="Your E-mail address"
+            required
+            type="email")
+          span.order-0.opacity-0-placeholder-shown.transition-200ms Your E-mail address
           
-        input.w-whole.m-b-1.p-1.rounded-4px.bg-white.black.ph-green.border-0.transition-200ms(
-          autocapitalize="off"
-          autocomplete="email"
-          aria-label="enter your e-mail address"
-          name="MERGE0"
-          placeholder="Your E-mail address"
-          required
-          type="email")
-
-        input.w-whole.m-b-1.p-1.rounded-4px.bg-white.black.ph-green.border-0.transition-200ms(
-          autocomplete="given-name" 
-          aria-label="enter your first name"
-          name="MERGE1"
-          placeholder="First Name"
-          required
-          type="text")
-
-        input.w-whole.m-b-1.p-1.rounded-4px.bg-white.black.ph-green.border-0.transition-200ms(
-          autocomplete="family-name"
-          aria-label="enter your surname"
-          name="MERGE2"
-          placeholder="Surname"
-          required
-          type="text")
-
-        button.pointer.w-whole.rounded-4px.active-bg-white.active-black.bg-black.white.transition-200ms(data-signup="button")
+        label.flex.flex-column
+          input.order-1.w-whole.p-1.font-size-1-5-ns.rounded-4px.bg-white.black.ph-green.border-0.transition-200ms(
+            autocomplete="given-name" 
+            name="MERGE1"
+            placeholder="First Name"
+            required
+            type="text")
+          span.order-0.opacity-0-placeholder-shown.transition-200ms First Name
+          
+        label.flex.flex-column
+          input.order-1.w-whole.m-b-1-5.p-1.font-size-1-5-ns.rounded-4px.bg-white.black.ph-green.border-0.transition-200ms(
+            autocomplete="family-name"
+            name="MERGE2"
+            placeholder="Surname"
+            required
+            type="text")
+          span.order-0.opacity-0-placeholder-shown.transition-200ms Surname
+          
+        button.pointer.w-whole.font-size-1-5-ns.rounded-4px.active-bg-white.active-black.bg-black.white.transition-200ms(data-signup="button")
           span.pointer-events-none.flex.justify-center.items-center.h-3.h-4-ns.p-r-05.p-l-05.p-r-1-ns.p-l-1-ns Notify Me
 
   .flex-ns.justify-between-ns.items-center-ns.p-1.p-2-ns.border-white-03.border-t-1px
