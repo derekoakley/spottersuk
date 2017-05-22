@@ -83,7 +83,7 @@ var FAVICON_DATA_FILE = "faviconData.json";
 gulp.task("generate-favicon", function(done) {
 	realFavicon.generateFavicon(
 		{
-			masterPicture: prod + "/img/favicon.png",
+			masterPicture: prod + "/img/white w-o green.svg",
 			dest: prod,
 			iconsPath: "/",
 			design: {
@@ -114,9 +114,12 @@ gulp.task("generate-favicon", function(done) {
 					}
 				},
 				androidChrome: {
-					pictureAspect: "noChange",
+					pictureAspect: "backgroundAndMargin",
+					margin: "17%",
+					backgroundColor: "#00a860",
 					themeColor: "#00a860",
 					manifest: {
+						name: "Spotters",
 						display: "standalone",
 						orientation: "notSet",
 						onConflict: "override",
@@ -128,8 +131,7 @@ gulp.task("generate-favicon", function(done) {
 					}
 				},
 				safariPinnedTab: {
-					pictureAspect: "blackAndWhite",
-					threshold: 90,
+					pictureAspect: "silhouette",
 					themeColor: "#00a860"
 				}
 			},
