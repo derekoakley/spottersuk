@@ -50,12 +50,9 @@ gulp.task("imagemin", function() {
 	return gulp
 		.src(prod + "/img/*")
 		.pipe(
-			imagemin({
-				multipass: true,
-				optimizationLevel: 7,
-				progressive: true,
-				svgoPlugins: [{ removeViewBox: false }]
-			})
+			imagemin([
+				imagemin.svgo({ plugins: [{ removeTitle: true, removeDesc: true }] })
+			])
 		)
 		.pipe(gulp.dest(prod + "/img"));
 });
