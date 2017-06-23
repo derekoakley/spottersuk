@@ -9,89 +9,89 @@ $dark-green: #2A5135;
 
 /*=Black*/
 .bg-black {
-  background-color: black;
+	background-color: black;
 }
 .bg-black-09 {
-  background-color: rgba(0,0,0,.9);
+	background-color: rgba(0, 0, 0, .9);
 }
 .bg-black-scrim {
- background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 }
 .black {
-  color: black;
+	color: black;
 }
 .border-black {
-  border-color: black;
+	border-color: black;
 }
 
 /*=Dark Green*/
 .border-dark-green {
-  border-color: $dark-green;
+	border-color: $dark-green;
 }
 
 /*=Green*/
 .bg-green {
-  background-color: $green;
+	background-color: $green;
 }
 .green {
-  color: $green;
+	color: $green;
 }
 .ph-green::-webkit-input-placeholder {
-  color: $green;
+	color: $green;
 }
 .ph-green::-moz-placeholder {
-  color: $green;
+	color: $green;
 }
 .ph-green:-ms-input-placeholder {
-  color: $green;
+	color: $green;
 }
 .ph-green:-moz-placeholder {
-  color: $green;
+	color: $green;
 }
 .border-green {
-  border-color: $green;
+	border-color: $green;
 }
 
 /*=Red*/
 .ph-red::-webkit-input-placeholder {
-  color: $red;
+	color: $red;
 }
 .ph-red::-moz-placeholder {
-  color: $red;
+	color: $red;
 }
 .ph-red:-ms-input-placeholder {
-  color: $red;
+	color: $red;
 }
 .ph-red:-moz-placeholder {
-  color: $red;
+	color: $red;
 }
 
 /*=Washed Red*/
 .bg-washed-red {
-  background-color: $washed-red;
+	background-color: $washed-red;
 }
 
 /*=White*/
 .bg-white {
-  background-color: white;
+	background-color: white;
 }
 .bg-white-03 {
-  background-color: rgba(255,255,255,.3);
+	background-color: rgba(255, 255, 255, .3);
 }
 .white {
-  color: white;
+	color: white;
 }
 .white-05 {
-  color: rgba(255,255,255,.5);
+	color: rgba(255, 255, 255, .5);
 }
 .border-white {
-  border-color: white;
+	border-color: white;
 }
 .border-white-03 {
-  border-color: rgba(255,255,255,.3);
+	border-color: rgba(255, 255, 255, .3);
 }
 .border-white-05 {
-  border-color: rgba(255,255,255,.5);
+	border-color: rgba(255, 255, 255, .5);
 }
 
 /*=Visited
@@ -99,44 +99,43 @@ $dark-green: #2A5135;
 
 /*=black*/
 .visited-black:visited {
- color: black;
+	color: black;
 }
 
 /*=White*/
 .visited-white:visited {
-  color: white;
+	color: white;
 }
-
 
 /*=Active
  */
 
 /*=Black*/
 .active-bg-black:active {
-  background-color: black;
+	background-color: black;
 }
 .active-black:active {
-  color: black;
+	color: black;
 }
 
 /*=Green*/
 .active-green:active {
-  color: green;
+	color: green;
 }
 
 /*=White*/
 .active-bg-white:active {
-  background-color: white;
+	background-color: white;
 }
 .active-white:active {
-  color: white;
+	color: white;
 }
 
 .no-bg {
-  background-color: transparent;
+	background-color: transparent;
 }
 @media screen and (min-width: $ns) {
-  .no-bg-ns {
-    background-color: transparent;
-  }
+	.no-bg-ns {
+		background-color: transparent;
+	}
 }
